@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="projStyle.css">
+</head>
+
+<body>
+  <a id="return" href="index.html">Return to main page</a>
+  <h1>MY PROJECTS</h1>
+  <sectoin>
+    <h2>PROGRAMMING</h2>
+    <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/dinoimg.PNG" alt="">
+      </div>
+      <p class="ProjInfo">Google's dino game - C#<br><a href="proj/DinoGame_OriolCasals.zip">Download here</a></p>
+    </article>
+    <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/flappySW1.PNG" alt="">
+      </div>
+      <p class="ProjInfo">Star Wars inspired Flappy Bird - JavaScript<br><a href="proj/FlappyStarWars.zip">Download here</a></p>
+    </article>
+    <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/numW.PNG" alt="">
+      </div>
+      <p class="ProjInfo">Guess the number (wordle Like game) - JavaScript<br><a href="proj/numberWordle.zip">Download here</a></p>
+    </article>
+    <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/vgweb.PNG" alt="">
+      </div>
+      <p class="ProjInfo">Videogame's web magazine prototype<br><a href="proj/VideoGameWeb.zip">Download here</a></p>
+    </article>
+  </sectoin>
+  <sectoin>
+    <h2>MODELING</h2>
+    <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/kangRender.png" alt="">
+        <img class="projImg" src="src/TransparentKang.png" alt="">
+        <img class="projImg" src="src/TransparentKangRight.png" alt="">
+      </div>
+      <p class="ProjInfo">Kang 3D model <br><a href="proj/kang.zip">Download here</a></p>
+    </article>
+    <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/modelPersonatge.png" alt="">
+        <img class="projImg" src="src/persRight.png" alt="">
+        <img class="projImg" src="src/persRight.png" alt="">
+      </div>
+        <p class="ProjInfo">Cartoon female character 3D model <br><a href="proj/modelPersonatge.zip">Download here</a></p>
+    </article>
+      <article>
+      <div class="projImgcontainer">
+        <img class="projImg" src="src/cata-pulta.png" alt="">
+        <img class="projImg" src="src/cata-pultaLeft.png" alt="">
+        <img class="projImg" src="src/cata-pultaBH.png" alt="">
+      </div>
+      <p class="ProjInfo">Catapult with animation 3D model <br><a href="proj/catapulta.zip">Download here</a></p>
+    </article>
+    <article>
+      <p class="ProjInfo">Other projects:</p>
+      <div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container fade">
+
+          <!-- Full images with numbers and message Info -->
+          <div class="Containers">
+            <div class="MessageInfo">1 / 5</div>
+            <img src="src/PAORENDER.png">
+          </div>
+
+          <div class="Containers">
+            <div class="MessageInfo">2 / 5</div>
+            <img src="src/hab.png">
+          </div>
+
+          <div class="Containers">
+            <div class="MessageInfo">3 / 5</div>
+            <img src="src/Grok-grugh.jpg">
+          </div>
+
+          <div class="Containers">
+            <div class="MessageInfo">4 / 5</div>
+            <img src="src/ReginaldFront.png">
+          </div>
+
+          <div class="Containers">
+            <div class="MessageInfo">5 / 5</div>
+            <img src="src/ReginaldSide.png">
+          </div>
+
+          <!-- Back and forward buttons -->
+          <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+      </div>
+    </article>
+  </sectoin>
+
+  <script>
+    var slidePosition = 1;
+    SlideShow(slidePosition);
+
+    // forward/Back controls
+    function plusSlides(n) {
+      SlideShow(slidePosition += n);
+    }
+
+    //  images controls
+    function currentSlide(n) {
+      SlideShow(slidePosition = n);
+    }
+
+    function SlideShow(n) {
+      var i;
+      var slides = document.getElementsByClassName("Containers");
+      if (n > slides.length) { slidePosition = 1 }
+      if (n < 1) { slidePosition = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slidePosition - 1].style.display = "block";
+    } 
+  </script>
+</body>
+
+</html>

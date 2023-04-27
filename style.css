@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: 1px solid white; */
+}
+
+body {
+    background-color: black;
+    color: rgb(238, 230, 230);
+}
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden
+}
+
+h1 {
+    font-size: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 2rem;
+    flex-direction: row;
+    background-color: black;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(rgb(0, 0, 0), rgb(170, 168, 168)) 3;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    width: 17%;
+    text-align: center;
+}
+
+a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(64, 224, 171);
+}
+
+/*^header*/
+
+/*main*/
+section,
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 2vw;
+    padding: 1rem 1rem 7rem 1rem;
+    overflow: hidden;
+    height: fit-content;
+    background: linear-gradient(grey, white) bottom no-repeat;
+    background-size:50% 3px;
+    /* border-bottom: 1px solid rgb(170, 168, 168); */
+    /* border-bottom: 3px solid;
+    border-image: conic-gradient(rgb(0, 0, 0), rgb(170, 168, 168)) 3; */
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(64, 224, 171);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: center;
+    font-size: 8vw;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+#home div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+#home img{
+    width: 30%; 
+    align-self: center;
+}
+#home p{
+    font-size: 2vh;
+    text-align: justify;
+    height: fit-content;
+    align-self: center;
+    width: 65%;
+    overflow: hidden;
+}
+
+#aboutMeInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#aboutMeInfo li{
+    font-size: 1.5vh;
+    width: max-content;
+}
+#aboutMeInfo p{
+    text-align: justify;
+    font-size: 1.5vh;
+    width: 80%;
+    align-self: center;
+}
+
+#info1,
+#info2 {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+#info1 img,
+#info2 img {
+    /* box-shadow: 4px 4px 4px white; */
+    width: 80%;
+    border-radius: 5%;
+}
+
+#info2 img {
+    margin-top: 2rem;
+}
+
+#info1 ul,
+#info2 ul {
+    margin: 1rem 0rem;
+    padding-left: 2rem;
+
+}
+
+#info1 li::marker,
+#info2 li::marker {
+    width: min-content;
+    font-size: 1rem;
+    color: rgb(64, 224, 171);
+}
+
+#proj{
+    justify-content: space-around;
+}
+#proj p{
+    max-width: 50%;
+    min-width: 40%;
+    height: fit-content;
+    align-self: center;
+    margin-right: 5rem;
+}
+
+#proj a{
+    color: rgb(64, 224, 171);
+}
+#proj a:hover{
+    color: gold;
+}
+
+#musicInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#musicInfo div{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-self: center;
+    justify-content: center;
+}
+
+#musicInfo p{
+    min-width:50%;
+    max-width: 60%;
+    height: fit-content;
+    align-self: center;
+    margin: 2rem;
+}
+
+#musicInfo a{
+    height: fit-content;
+    align-self: center;
+    padding: 1rem;
+}
+
+#bcIG{
+    border-radius: 8%;
+    min-width: 15rem;
+    max-width: 24rem;
+    width: 100%;  
+}
+
+address{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+address div{
+    width: fit-content;
+    display: flex;
+    align-content: space-around;
+}
+
+address img{
+    max-width: 6vw;
+}
+
+address a{
+    align-self: center;
+}
+
+/*^main*/
+
+
