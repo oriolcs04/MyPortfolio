@@ -65,6 +65,9 @@ article {
   max-width: 35vh;
   margin: 0.5rem;
 }
+img{
+  border-radius: 5%;
+}
 
 a{
   color: rgb(64, 224, 171);
